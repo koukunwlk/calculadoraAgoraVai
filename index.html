@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="display">
+            <input type="text" id="display" disabled>
+        </div>
+
+        <div class="container-buttons">
+            <input type="submit" value="7" onclick="buttons(this)">
+            <input type="submit" value="8" onclick="buttons(this)">
+            <input type="submit" value="4" onclick="buttons(this)">
+            <input type="submit" value="9" onclick="buttons(this)">
+            <input type="submit" value="5" onclick="buttons(this)">
+            <input type="submit" value="6" onclick="buttons(this)">
+            <input type="submit" value="1" onclick="buttons(this)">
+            <input type="submit" value="2" onclick="buttons(this)">
+            <input type="submit" value="3" onclick="buttons(this)">
+            <input type="submit" id="c" value="C" onclick="clear()">
+            <input type="submit" value="0" onclick="buttons(this)">
+            <input type="submit" value="=" class="equal" onclick="calculate()">
+
+        </div>
+
+        <div class="container-operations">
+            <input type="submit" value="/" onclick="buttons(this)">
+            <input type="submit" value="*" onclick="buttons(this)">
+            <input type="submit" value="+" onclick="buttons(this)">
+            <input type="submit" value="-" onclick="buttons(this)">
+        </div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
